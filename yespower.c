@@ -47,13 +47,7 @@ int yespower_hash(const char *input, char *output)
 //    } else {
 //        yespower_tls(input, 80, &v1, (yespower_binary_t *) output);
 //    }
-    
-        int j;
-    for(j = 0; j < 16; j++){  // reverse output
-        int t = output[j];
-        output[j] = output[32- j - 1];
-        output[32 - j - 1] = t;
-    }
+
 }
 
 static PyObject *yespower_getpowhash(PyObject *self, PyObject *args)
