@@ -1,4 +1,4 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 yespower_module = Extension('yespower',
         sources = ['yespower.c'],
         extra_compile_args=['-march=native', '-funroll-loops', '-fomit-frame-pointer'],
