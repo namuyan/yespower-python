@@ -39,7 +39,7 @@
 
 static const yespower_params_t v2 = {YESPOWER_0_9, 2048, 32, NULL, 0};
 
-int yespower_hash(const char *input, char *output)
+void yespower_hash(const char *input, char *output)
 {
 //    uint32_t time = le32dec(&input[68]);
 //    if (time > 1530403200) {
