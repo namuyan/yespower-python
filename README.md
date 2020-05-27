@@ -1,15 +1,30 @@
 # yespower-python
-Yespower hash for python.
-Yespower is encryption algorithm used on Cryply blockchain.
+**yespower0.9** hash for python.
 
 ## compile
+Linux with GCC
 ```
-git clone git+https://github.com/spacecobra/yespower-python.git
+git clone git+https://github.com/namuyan/yespower-python.git
 python setup.py build
-python setup.py install
+pip install build/lib.???/yespower.cp???.pyd
 ```
-~~[Windows binary](https://github.com/spacecobra/yespower-python/releases)~~ Find mistake.
+
+Windows with MSVC
+```
+git clone git+https://github.com/namuyan/yespower-python.git
+python setup.py build --compile=msvc
+pip install build/lib.???/yespower.cp???.pyd
+```
+
+Windows with MSYS2
+```
+git clone git+https://github.com/namuyan/yespower-python.git
+python setup.py build --compile=mingw32
+pip install build/lib.???/yespower.cp???.pyd
+```
+
 ## author
 spacecobra
+
 ## license
 MIT
